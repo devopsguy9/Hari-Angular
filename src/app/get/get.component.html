@@ -1,0 +1,21 @@
+<div class="container">
+
+
+<!-- <h1>{{vr.data.id}}</h1> <br>
+<h1>{{vr.data.name}}</h1> -->
+<div>
+    <h1> USERS</h1><br><input type="text" [(ngModel)]="queryString" id="search" placeholder="Search to type"><br>
+   <br>
+<div *ngFor="let use of dataarr">
+      
+        <div class="well">
+          <br>
+ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{use.id}}<br><br>
+Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{use.name}}<br><br>
+Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{use.phone}}<br><br>
+Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{use.email}}<br><br>
+</div>
+
+</div>  </div>
+
+</div>

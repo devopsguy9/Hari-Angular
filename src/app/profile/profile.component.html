@@ -1,0 +1,35 @@
+<br>
+
+<div class="header">
+<div class="container">
+  <br>
+  <br>
+  Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input #name  placeholder="Enter your Name"><br><br>
+  Mobile: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input #mobile  placeholder="Enter your Mobile no"><br><br>
+  Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input #location  placeholder="Enter your location"><br><br>
+  Qualification: &nbsp;<input  #qualification placeholder="Enter your qualification"><br><br>
+  organisation: &nbsp;<input #organisation  placeholder="Enter your organisation">
+ 
+  <br>
+  <br>
+  <div style="padding-left:92px">
+    <button (click)="addUser(name.value,organisation.value,location.value,mobile.value,qualification.value)">Add User</button>
+   </div>
+<div>
+  --------------------------------------------
+</div>
+  
+  <div class="container" *ngFor="let user of users">
+      
+   <h1> user Added Succeccfully</h1>
+   <h1>{{vr.data.id}}</h1>
+    Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user.name}}<br><br>
+    Mobile: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user.mobile}}<br><br>
+    Location: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user.location}}<br><br>
+    Qualification: &nbsp;{{user.qualification}}<br><br>
+    organisation: &nbsp;{{user.organisation}}
+
+
+   
+  </div>
+</div></div>

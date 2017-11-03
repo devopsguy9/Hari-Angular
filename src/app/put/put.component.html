@@ -1,0 +1,25 @@
+<div class="container">
+  
+    <br>
+    <form class="form-group" #form="ngForm" (ngSubmit)="addUser(user)">
+    Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="user.name" name="name"  placeholder="Enter your Name"><br><br>
+    Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="user.phone"  name="phone"  placeholder="Enter your location"><br><br>
+    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  [(ngModel)]="user.email"  name="email" placeholder="Enter your Mobile no"><br><br>
+    Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="user.phone"  name="phone"  placeholder="Enter your location"><br><br>
+    Password:&nbsp;&nbsp;&nbsp;<input type="password"  [(ngModel)]="user.password"  name="password" placeholder="Enter your qualification"><br><br>
+    <!-- ConfirmPassword: &nbsp;<input   name="confirmpassword"  placeholder="Enter your organisation">
+    -->
+    <br>
+<br> 
+<div style="padding-left:92px">
+    <button>Add User</button>
+   </div>
+</form>
+   <div>
+      <h1>{{vr}}</h1>
+   </div>
+</div>
+
+
+<!-- 
+#data.password -->
